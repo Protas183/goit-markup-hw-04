@@ -57,11 +57,11 @@ a {
 }
 
 .webstudio_header:hover {
-  color: aqua;
+  color: #62b8ff;
 }
 
 .webstudio_header:focus {
-  color: aqua;
+  color: #62b8ff;
 }
 
 .menu_nav {
@@ -72,7 +72,7 @@ a {
   display: flex;
 }
 
-.studio {
+.li_menu_nav {
   display: block;
   font-weight: 500;
   font-size: 14px;
@@ -82,61 +82,18 @@ a {
   list-style-type: none;
 }
 
-.text_studio {
-  padding-top: 24px;
-  padding-bottom: 24px;
+.li_menu_nav:not(:last-child) {
+  margin-right: 50px;
+}
+
+.text_menu_nav {
   color: #212121;
 }
-.text_studio:hover {
+.text_menu_nav:hover {
   color: #2196f3;
 }
 
-.text_studio:focus {
-  color: #2196f3;
-}
-
-.portfolio {
-  margin-left: 50px;
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-  list-style-type: none;
-}
-
-.text_portfolio {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  color: #212121;
-}
-.text_portfolio:hover {
-  color: #2196f3;
-}
-.text_portfolio:focus {
-  color: #2196f3;
-}
-.contacts {
-  margin-left: 50px;
-  display: block;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-  list-style-type: none;
-}
-
-.text_contacts {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  color: #212121;
-}
-.text_contacts:hover {
-  color: #2196f3;
-}
-.text_contacts:focus {
+.text_menu_nav:focus {
   color: #2196f3;
 }
 
@@ -147,7 +104,7 @@ a {
   padding: 0;
 }
 
-.email {
+.li_contacts {
   margin-right: 50px;
   display: flex;
   align-items: center;
@@ -157,70 +114,30 @@ a {
   list-style-type: none;
 }
 
-.email_icon {
+.email_tel_icon {
   margin-right: 10px;
   width: 16px;
   height: 12px;
   fill: #757575;
 }
 
-.text_email:hover .email_icon {
+.text_email_tel:hover .email_tel_icon {
   fill: #2196f3;
 }
 
-.text_email:focus .email_icon {
+.text_email_tel:focus .email_tel_icon {
   fill: #2196f3;
 }
 
-.text_email {
+.text_email_tel {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
   color: #757575;
 }
-.text_email:hover {
+.text_email_tel:hover {
   color: #2196f3;
 }
-.text_email:focus {
-  color: #2196f3;
-}
-
-.tel {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  list-style-type: none;
-}
-
-.tel_icon {
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  fill: #757575;
-}
-
-.text_tel:hover .tel_icon {
-  fill: #2196f3;
-}
-.text_tel:focus .tel_icon {
-  fill: #2196f3;
-}
-
-.text_tel {
-  display: flex;
-  align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  color: #757575;
-}
-
-.text_tel:hover {
-  color: #2196f3;
-}
-.text_tel:focus {
+.text_email_tel:focus {
   color: #2196f3;
 }
 
@@ -270,7 +187,11 @@ a {
 }
 
 .button_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -388,7 +309,6 @@ a {
 .text_our_team {
   margin: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -401,7 +321,6 @@ a {
   display: flex;
   margin: 0 auto;
   padding-left: 0;
-  padding-bottom: 94px;
   justify-content: space-between;
 }
 
@@ -492,8 +411,8 @@ a {
 }
 
 .our_clients {
-  padding-top: 90px;
-  padding-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .text_our_clients {
@@ -537,8 +456,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  width: 169px;
+  height: 89px;
 }
 
 .icon_clients {
@@ -551,7 +470,7 @@ a {
   fill: #2196f3;
 }
 
-.li_clients:focus .icon_clients {
+.href_clients:focus .icon_clients {
   fill: #2196f3;
 }
 
@@ -568,7 +487,8 @@ a {
 }
 
 .webstudio_footer {
-  margin-bottom: 11px;
+  display: block;
+  margin-bottom: 20px;
   width: 140px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -725,6 +645,9 @@ a {
 }
 
 .button_filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-left: 22px;
   padding-right: 22px;
   height: 38px;
@@ -740,6 +663,13 @@ a {
 }
 
 .button_filter:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button_filter:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
