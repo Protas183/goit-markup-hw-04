@@ -106,6 +106,8 @@ a {
 
 .li_contacts {
   margin-right: 50px;
+  padding: 0;
+  height: 16px;
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -115,9 +117,8 @@ a {
 }
 
 .email_tel_icon {
+  height: 16px;
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
   fill: #757575;
 }
 
